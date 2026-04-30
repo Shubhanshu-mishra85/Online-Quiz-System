@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    int scores[5], sum = 0;
+
+    printf("Enter 5 student scores:\n");
+
+    for(int i = 0; i < 5; i++) {
+        scanf("%d", &scores[i]);
+        sum += scores[i];
+    }
+
+    printf("Average Score = %d\n", sum/5);
+
+    return 0;
+}
